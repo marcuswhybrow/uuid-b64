@@ -9,6 +9,8 @@ A UUID wrapper that has a base64 display and serialization
 >
 > 1. Support Nix Flake reproducable environments.
 > 2. Update [uuid](https://crates.io/crates/uuid) to 1.16.0.
+> 3. Add `reactive_stores` feature supporting Leptos [reactive_stores](https://crates.io/crates/reactive_stores)
+> 4. Add `sqlx_sqlite` feature supporting use as a type in an [sqlx](https://crates.io/crates/sqlx) Sqlite database.
 
 ## What?
 
