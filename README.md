@@ -1,8 +1,14 @@
 # uuid-b64
 
-[![Push](https://github.com/quodlibetor/uuid-b64/actions/workflows/push.yml/badge.svg)](https://github.com/quodlibetor/uuid-b64/actions/workflows/push.yml)
+[![Push](https://github.com/marcuswhybrow/uuid-b64/actions/workflows/push.yml/badge.svg)](https://github.com/marcuswhybrow/uuid-b64/actions/workflows/push.yml)
 
 A UUID wrapper that has a base64 display and serialization
+
+> [!NOTE]
+> This is a fork of [quodlibetor/uuid-b64](https://github.com/quodlibetor/uuid-b64) with the following new features:
+>
+> 1. Support Nix Flake reproducable environments.
+> 2. Update [uuid](https://crates.io/crates/uuid) to 1.16.0.
 
 ## What?
 
