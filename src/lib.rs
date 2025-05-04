@@ -107,6 +107,8 @@ use crate::errors::{ErrorKind, ResultExt};
 mod errors;
 #[cfg(feature = "serde")]
 mod serde_impl;
+#[cfg(feature = "sqlx_sqlite")]
+mod sqlx_impl;
 
 /// It's a Uuid that displays as Base 64
 #[derive(Copy, Clone, PartialEq, Eq, Hash, PartialOrd, Ord)]
