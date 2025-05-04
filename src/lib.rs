@@ -109,10 +109,13 @@ mod errors;
 mod serde_impl;
 #[cfg(feature = "sqlx_sqlite")]
 mod sqlx_impl;
+#[cfg(feature = "reactive_stores")]
+mod reactive_stores_impl;
 
 /// It's a Uuid that displays as Base 64
 #[derive(Copy, Clone, PartialEq, Eq, Hash, PartialOrd, Ord)]
 #[cfg_attr(feature = "diesel-uuid", derive(DieselNewType))]
+#[cfg_attr(feature = "reactive_stores", derive(reactive_stores::Store))]
 pub struct UuidB64(uuid::Uuid);
 
 impl UuidB64 {
